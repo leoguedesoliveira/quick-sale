@@ -1,5 +1,9 @@
 import { app } from "./app.js";
+import dotenv from 'dotenv';
 
-app.listen(3333, () => {
+dotenv.config();
+
+
+app.listen(process.env.PORT, () => {
     console.log('HTTP Server Running')
 })
